@@ -1,0 +1,3 @@
+//synchronous javascript
+
+//asynchronous javascript
