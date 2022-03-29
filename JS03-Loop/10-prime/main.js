@@ -1,6 +1,6 @@
 // ให้เขียนโค้ดเพื่อหาจำนวนเฉพาะตั้งแต่ 1 ถึง 100
 
-let number = 0;
+// let number = 0;
 let count = 0;
 
 // for (let i = 2; i <= 5; i++) {
@@ -24,12 +24,12 @@ function isPrime(number) {
   }
 }
 
-// console.log(isPrime(4));
-// console.log(isPrime(5));
-// console.log(isPrime(6));
-// console.log(isPrime(11));
-// console.log(isPrime(1111));
+console.log(isPrime(4));
+console.log(isPrime(5));
+console.log(isPrime(6));
+console.log(isPrime(11));
+console.log(isPrime(1111));
 
-for (let i = 2; i <= 11; i++) {
-  if (isPrime(i)) console.log(i);
-}
+// for (let i = 2; i <= 11; i++) {
+//   if (isPrime(i)) console.log(i);
+// }
