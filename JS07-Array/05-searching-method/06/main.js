@@ -5,4 +5,17 @@ const tasks = [
   { id: 2, name: "Shopping" },
   { id: 3, name: "Swimming" },
 ];
-// expexted result: 1
+// expected result: 1
+
+let funcFindIndex = (id) => {
+  let findIndex = tasks.filter((el, i) => {
+    if (el.id === id) {
+      console.log(i);
+    } else {
+      return false;
+    }
+  });
+};
+funcFindIndex(2);
+
+// solution -> findIndex
