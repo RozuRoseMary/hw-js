@@ -2,12 +2,16 @@
 // - ตัวอย่างผลลัพธ์
 
 let copySorted = (array) => {
-  let sorting = array.sort((a, b) => a - b);
+  let cloneArray = array.slice(0);
+  let sorting = cloneArray.sort((a, b) => {
+    if (a > b) return 1;
+    return -1;
+  });
   return sorting;
 };
 
 let arr = ["React", "Vue", "Angular"];
 let sorted = copySorted(arr);
 
-console.log(sorted); // Angular, React, Vue
 console.log(arr); // React, Vue, Angular (no changes)
+console.log(sorted); // Angular, React, Vue

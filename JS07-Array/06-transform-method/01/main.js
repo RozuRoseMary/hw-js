@@ -100,28 +100,28 @@
 // console.log(valueObj);
 // result: ["apple London", "banana Bangkok", "watermelon Singapore"]
 
-// const array = [
-//   { name: "apple", birth: "2000-01-01" },
-//   { name: "banana", birth: "1990-10-01" },
-//   { name: "watermelon", birth: "1985-12-01" },
-// ];
-// let user = array.map((el, index, arr) => {
-//   let year = +el.birth.split("-")[0];
-//   let findAge = 2021 - year;
-//   return (arr[index].age = findAge);
-// });
-// console.log(array);
+const array = [
+  { name: "apple", birth: "2000-01-01" },
+  { name: "banana", birth: "1990-10-01" },
+  { name: "watermelon", birth: "1985-12-01" },
+];
+let user = array.map((el, index, arr) => {
+  let year = +el.birth.split("-")[0];
+  let findAge = 2021 - year;
+  return (arr[index].age = findAge);
+});
+console.log(array);
 // result: [
 //   { name: "apple", birth: "2000-01-01", age: 21 },
 //   { name: "banana", birth: "1990-10-01", age: 31 },
 //   { name: "watermelon", birth: "1985-12-01", age: 36 },
 // ]
 
-const array = [
-  { name: "apple", birth: "2000-01-01" },
-  { name: "banana", birth: "1990-10-10" },
-  { name: "watermelon", birth: "1985-12-30" },
-];
+// const array = [
+//   { name: "apple", birth: "2000-01-01" },
+//   { name: "banana", birth: "1990-10-10" },
+//   { name: "watermelon", birth: "1985-12-30" },
+// ];
 let month = [
   "Jan",
   "Feb",
@@ -140,16 +140,14 @@ let month = [
 //   month[+el.birth.split("-")[1]]
 // })
 
-let result = array.map((el) => {
-  let birthDate = el.birth.split("-")[2];
-  let birthMonth = month[+el.birth.split("-")[1] - 1];
-  // let birthMonth = +el.birth.split("-")[1];
-  // birthMonth = month[el];
-  let birthYear = el.birth.split("-")[0];
-  return `<tr><td>${el.name}</td><td>${birthDate} ${birthMonth} ${birthYear}</td></tr>`;
-  // return ;
-});
-console.log(result);
+// let result = array.map((el) => {
+//   let birthDate = el.birth.split("-")[2];
+//   let birthMonth = month[+el.birth.split("-")[1] - 1];
+//   let birthYear = el.birth.split("-")[0];
+//   return `<tr><td>${el.name}</td><td>${birthDate} ${birthMonth} ${birthYear}</td></tr>`;
+//   // return ;
+// });
+// console.log(result);
 // result: [
 //     "<tr><td>apple</td><td>01 jan 2000</td></tr>",
 //     "<tr><td>banana</td><td>10 oct 1990</td></tr>",

@@ -6,7 +6,8 @@
 // - จงหาความยาวของ styles หลังจากทำครบตามขั้นตอนที่กำหนด
 // i
 
-let styles = ["Jazz", "Blues"];
-styles.push("Rock-n-Roll");
+let styles = ["Jazz", "Blues"]; //length = 2
+styles.push("Rock-n-Roll"); //length = 3
 styles.splice(1, 1, "Classic");
 console.log(styles);
+console.log(styles.length); //3

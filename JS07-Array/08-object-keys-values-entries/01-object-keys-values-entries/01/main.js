@@ -5,3 +5,6 @@ let salaries = {
   Ann: 160,
   Pete: 130,
 };
+
+let result = Object.values(salaries).reduce((acc, salary) => acc + salary, 0);
+console.log(result);

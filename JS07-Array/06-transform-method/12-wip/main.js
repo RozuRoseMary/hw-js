@@ -6,3 +6,13 @@ let flattened = [
   [4, 5],
 ];
 // expected result: [0, 1, 2, 3, 4, 5]
+
+let result = flattened.map((el, index) => {
+  // for (let i = 0; i <= el.length; i++) {
+  //   return el[i];
+  // }
+  // return;
+});
+
+// let result = [].concat([], flattened);
+console.log(result);

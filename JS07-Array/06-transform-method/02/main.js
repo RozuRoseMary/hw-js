@@ -4,17 +4,10 @@ let str1 = "background-color"; //backgroundColor
 
 let camelCase = (str) => {
   let splitCha = str.split("-");
-  // splitCha[1][0];
-  let upperCase = str.split("-")[1][0].toUpperCase();
-
-  let mapStr = splitCha.map((el, index, array) => {
-    // if (index > 0)
-    return el;
-  });
-  camelCase(mapStr);
+  let splitOne = splitCha[1].split("");
+  splitOne[0] = splitOne[0].toUpperCase();
+  splitCha[1] = splitOne.join("");
+  let result = splitCha.join("");
+  console.log(result);
 };
 camelCase(str1);
-
-//split
-//upper case
-//joint
