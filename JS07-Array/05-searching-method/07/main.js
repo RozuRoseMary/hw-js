@@ -7,26 +7,26 @@ const tasks = [
   { id: 3, name: "Swimming" },
 ];
 
-// let updateTask = (id, newName) => {
-//   let change = tasks.filter((el) => {
-//     if (id === el.id) {
-//       el.newName = newName;
-//       delete el.name;
-//     }
-//   });
-//   console.log(tasks);
-// };
-// updateTask(2, "Travelling");
-
-// solution
 let updateTask = (id, newName) => {
-  const idx = tasks.findIndex((task) => task.id === id);
-  if (idx !== -1) {
-    //-1 is an index over arr.length
-    tasks[idx].name = newName;
-    console.log(tasks);
-  } else {
-    alert("Task with this id is not found");
-  }
+  let change = tasks.filter((el) => {
+    if (id === el.id) {
+      el.newName = newName;
+      delete el.name;
+    }
+  });
+  console.log(tasks);
 };
 updateTask(2, "Travelling");
+
+// solution
+// let updateTask = (id, newName) => {
+//   const idx = tasks.findIndex((task) => task.id === id);
+//   if (idx !== -1) {
+//     //-1 is an index over arr.length
+//     tasks[idx].name = newName;
+//     console.log(tasks);
+//   } else {
+//     alert("Task with this id is not found");
+//   }
+// };
+// updateTask(2, "Travelling");

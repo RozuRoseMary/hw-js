@@ -7,12 +7,11 @@ const products = [
 ];
 // { 1: { name: 'Crystal' }, 4: { name: 'Namthip' }, 5: { name: 'Nestle' } };
 
-let set = new Set(products);
+let container = {};
 
-console.log(set);
-
-// let result = products.map((el) => {
-//   let obj = { el };
-//   return obj;
-// });
-// console.log(result);
+for (let i = 0; i < products.length; i++) {
+  container[products[i].id] = {
+    name: products[i].name,
+  };
+}
+console.log(container);

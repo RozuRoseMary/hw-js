@@ -9,9 +9,7 @@ const tasks = [
 
 let deleteTask = (id) => {
   let change = tasks.filter((el) => {
-    if (id === el.id) {
-      tasks.splice(el, 1);
-    }
+    if (id === el.id) tasks.splice(el, 1);
   });
   console.log(tasks);
 };

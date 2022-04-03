@@ -16,6 +16,6 @@ let funcFindIndex = (id) => {
     }
   });
 };
-funcFindIndex(2);
+funcFindIndex(3);
 
 // solution -> findIndex
