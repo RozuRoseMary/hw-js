@@ -7,18 +7,75 @@
 // - show() ให้ alert ค่า value
 
 class Calculator {
-  value = 10;
+  constructor(value) {
+    this.value = value;
+    this.num = 0;
+  }
 
   sum() {
-    let inputNumber = +prompt("Enter number");
-    return inputNumber + this.value;
+    this.num = +prompt("Enter num to sum");
+    this.value = this.value + this.num;
+    alert(`initiate value + ${this.num} = ${this.value}`);
   }
 
   subtract() {
-    return this.value;
+    this.num = +prompt("Enter num to subtract");
+    this.value = this.value - this.num;
+    alert(`Num - ${this.num} = ${this.value}`);
   }
 
   multiply() {
-    return this.value;
+    this.num = +prompt("Enter num to multiply");
+    this.value = this.value * this.num;
+    alert(`Num * ${this.num} = ${this.value}`);
+  }
+
+  divide() {
+    this.num = +prompt("Enter num to divide");
+    this.value = this.value / this.num;
+    alert(`Num / ${this.num} = ${this.value}`);
+  }
+
+  show() {
+    alert("result : " + this.value);
   }
 }
+let calculator = new Calculator(10);
+calculator.sum();
+calculator.subtract();
+calculator.multiply();
+calculator.divide();
+calculator.show();
+
+// class Calculator {
+//   constructor(value) {
+//     this.value = 0;
+//     this.inputNumber = 0;
+//   }
+
+//   sum(value) {
+//     return this.value + prompt("Enter number");
+//   }
+
+//   subtract(value) {
+//     // return this.value;
+//     this.value /= +prompt("Enter number");
+//   }
+
+//   multiply(value) {
+//     return this.value;
+//   }
+
+//   divide(value) {
+//     return this.value;
+//   }
+
+//   show(value) {
+//     alert(this.value);
+//   }
+// }
+
+// let calculator = new Calculator(10);
+// // calculator.sum();
+// console.log(calculator.sum());
+// console.log(calculator.subtract());
