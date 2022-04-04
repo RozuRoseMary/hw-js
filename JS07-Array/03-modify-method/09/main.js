@@ -2,5 +2,5 @@
 
 const sports = ["football", "volleyball", "tennis", "basketball", "judo"];
 
-let Array = sports.splice(1, 3);
+let Array = sports.splice(1, 4);
 console.log(Array);

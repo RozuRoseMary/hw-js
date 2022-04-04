@@ -7,7 +7,14 @@
 // i
 
 let styles = ["Jazz", "Blues"]; //length = 2
+
+// styles[styles.length] = "Rock-n-Roll"
 styles.push("Rock-n-Roll"); //length = 3
-styles.splice(1, 1, "Classic");
+
+//styles[1] = "Classic"
+styles.splice(1, 1, "Classic"); //3
+
+delete styles[0]; //3
+
 console.log(styles);
 console.log(styles.length); //3

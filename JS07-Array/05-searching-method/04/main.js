@@ -2,8 +2,5 @@
 
 const nums = [7, 9, -5, -1, 0, 3];
 // expexted result: -5
-let result = nums.find((el) => {
-  if (el < 0) return true;
-  else return false;
-});
+let result = nums.find((el) => el < 0);
 console.log(result);

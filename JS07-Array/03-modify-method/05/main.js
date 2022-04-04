@@ -7,3 +7,7 @@ let clone = (arr) => {
 let Array = [1, 2, 3, 4, 5];
 
 clone(Array);
+
+//solution
+// return arr.slice(0);
+return [...arr];

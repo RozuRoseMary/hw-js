@@ -11,4 +11,6 @@ arr[2]();
 a,b function () {
   alert(this);
 }
+
+this = arr
 */

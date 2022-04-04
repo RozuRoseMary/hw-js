@@ -4,12 +4,6 @@
 // - ตัวอย่างผลลัพธ์
 
 let first = (arr, n) => {
-  // if (n >= 1) {
-  //   return arr.splice(0, n);
-  // } else {
-  //   return arr[0];
-  // }
-
   if (n >= 1) return arr.splice(0, n);
   return arr[0];
 };

@@ -7,15 +7,14 @@ let findWord = (text) => {
     text.toLowerCase().includes("xxx") ||
     text.toLowerCase().includes("sex") ||
     text.toLowerCase().includes("porn")
-  ) {
+  )
     console.log(true);
-  } else {
-    console.log(false);
-  }
+  else console.log(false);
 };
 
 findWord("xxx sadfsdf");
+findWord("Hello, world");
 findWord("XXX fasfdasf");
-findWord("sadasd sex");
+findWord("sadasdsex");
 findWord("sadasd sEX");
 findWord("PORN");

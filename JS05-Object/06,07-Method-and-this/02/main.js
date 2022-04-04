@@ -4,10 +4,9 @@ var name = "Joe";
 function makeUser() {
   return {
     name: "John",
-    ref: this,
+    ref: this, //this window obj
   };
 }
 let user = makeUser();
-console.log(user.name, "test"); // John
-console.log(user.ref.name); // * John x
-// Joe
+//console.log(user.ref); // window
+console.log(user.ref.name); // * John x // Joe

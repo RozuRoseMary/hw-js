@@ -5,3 +5,7 @@ const b = [2, 3, 6];
 
 let mergeArr = a.concat(b);
 console.log(mergeArr);
+
+//solution
+let result = [...a, ...b];
+console.log(result);

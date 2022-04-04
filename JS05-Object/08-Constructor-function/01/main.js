@@ -18,7 +18,7 @@ function Calculator(read, sum, mul) {
   };
 }
 
-const cal = new Calculator();
+const cal = new Calculator(); //
 
 // console.log(cal);
 cal.read();

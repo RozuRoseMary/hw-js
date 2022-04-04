@@ -16,6 +16,8 @@ let funcFindIndex = (id) => {
     }
   });
 };
-funcFindIndex(3);
+funcFindIndex(2);
 
 // solution -> findIndex
+// const idx = tasks.findIndex((el) => 2 === el.id);
+// console.log(idx);

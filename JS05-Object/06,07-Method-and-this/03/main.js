@@ -8,7 +8,7 @@ let calculator = {
   secondNum: 0,
   read() {
     firstNum = +prompt("Enter first number");
-    secondNum = +prompt("Enter first number");
+    secondNum = +prompt("Enter second number");
   },
   sum() {
     return firstNum + secondNum;

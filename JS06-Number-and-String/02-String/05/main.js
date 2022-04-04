@@ -5,13 +5,18 @@
 // truncate("What I'd like to tell on this topic is:", 20); // What I'd like to te…
 // truncate("Hi everyone!", 20); // Hi everyone!
 
-let truncate = (str, length) => {
-  if (str.length >= length) {
-    console.log(str.slice(0, length) + "...");
-  } else {
-    console.log(str);
-  }
-};
+// let truncate = (str, length) => {
+//   if (str.length >= length) {
+//     console.log(str.slice(0, length) + "...");
+//   } else {
+//     console.log(str);
+//   }
+// };
 
+let truncate = (str, length) => {
+  if (str.length >= length) console.log(str.slice(0, length) + "...");
+  else console.log(str);
+};
 truncate("What I'd like to tell on this topic is:", 20);
 truncate("Hi everyone!", 20);
+// forget (str.length - 1)

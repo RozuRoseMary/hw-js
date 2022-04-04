@@ -10,8 +10,8 @@ const persons = [
 // expexted result: { M: ['John', 'Jody', 'Sid'], F: ['Susan', 'Kate'] }
 
 let result = persons.reduce((acc, item) => {
-  if (result[item.sex])
-}
+   (result[item.sex])
+,{}}
 
 // let result = persons.map((item) => {
 //   let container = {};
