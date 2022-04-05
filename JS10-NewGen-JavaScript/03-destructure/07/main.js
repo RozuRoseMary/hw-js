@@ -3,6 +3,7 @@
 let guest = "Jane";
 let admin = "Pete";
 
-// let convertName = () => {};
+[guest, admin] = [admin, guest];
 
-// let [guest, admin] = guest;
+console.log(admin); // Jane
+console.log(guest); // Pete
