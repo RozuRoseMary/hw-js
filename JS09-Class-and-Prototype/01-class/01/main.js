@@ -7,6 +7,7 @@
 // - show() ให้ alert ค่า value
 
 class Calculator {
+  value = 0;
   constructor(value) {
     this.value = value;
     this.num = 0;
